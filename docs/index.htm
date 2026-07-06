@@ -27,10 +27,10 @@ xmlns="http://www.w3.org/TR/REC-html40">
  var c_rgszSh=new Array(c_lTabs);
  c_rgszSh[0] = "Matches";
  c_rgszSh[1] = "Leaderboard";
- c_rgszSh[2] = "L";
- c_rgszSh[3] = "J";
- c_rgszSh[4] = "S";
- c_rgszSh[5] = "F";
+ c_rgszSh[2] = "LLLLLLL";
+ c_rgszSh[3] = "JJJJJJJ";
+ c_rgszSh[4] = "SSSSSSS";
+ c_rgszSh[5] = "FFFFFFF";
 
 
 
@@ -60,7 +60,7 @@ function fnGetIEVer()
 function fnBuildFrameset()
 {
  var szHTML="<frameset rows=\"*,18\" border=0 width=0 frameborder=no framespacing=0>"+
-  "<frame src=\""+document.all.item("shLink")[5].href+"\" name=\"frSheet\" noresize>"+
+  "<frame src=\""+document.all.item("shLink")[0].href+"\" name=\"frSheet\" noresize>"+
   "<frameset cols=\"54,*\" border=0 width=0 frameborder=no framespacing=0>"+
   "<frame src=\"\" name=\"frScroll\" marginwidth=0 marginheight=0 scrolling=no>"+
   "<frame src=\"\" name=\"frTabs\" marginwidth=0 marginheight=0 scrolling=no>"+
@@ -316,28 +316,27 @@ function fnSetActiveSheet(iSh)
     <x:WorksheetSource HRef="index_files/sheet002.htm"/>
    </x:ExcelWorksheet>
    <x:ExcelWorksheet>
-    <x:Name>L</x:Name>
+    <x:Name>LLLLLLL</x:Name>
     <x:WorksheetSource HRef="index_files/sheet003.htm"/>
    </x:ExcelWorksheet>
    <x:ExcelWorksheet>
-    <x:Name>J</x:Name>
+    <x:Name>JJJJJJJ</x:Name>
     <x:WorksheetSource HRef="index_files/sheet004.htm"/>
    </x:ExcelWorksheet>
    <x:ExcelWorksheet>
-    <x:Name>S</x:Name>
+    <x:Name>SSSSSSS</x:Name>
     <x:WorksheetSource HRef="index_files/sheet005.htm"/>
    </x:ExcelWorksheet>
    <x:ExcelWorksheet>
-    <x:Name>F</x:Name>
+    <x:Name>FFFFFFF</x:Name>
     <x:WorksheetSource HRef="index_files/sheet006.htm"/>
    </x:ExcelWorksheet>
   </x:ExcelWorksheets>
   <x:Stylesheet HRef="index_files/stylesheet.css"/>
-  <x:WindowHeight>11500</x:WindowHeight>
-  <x:WindowWidth>19420</x:WindowWidth>
+  <x:WindowHeight>15720</x:WindowHeight>
+  <x:WindowWidth>29040</x:WindowWidth>
   <x:WindowTopX>32767</x:WindowTopX>
   <x:WindowTopY>32767</x:WindowTopY>
-  <x:ActiveSheet>5</x:ActiveSheet>
   <x:ProtectStructure>False</x:ProtectStructure>
   <x:ProtectWindows>False</x:ProtectWindows>
  </x:ExcelWorkbook>
@@ -345,7 +344,7 @@ function fnSetActiveSheet(iSh)
 </head>
 
 <frameset rows="*,39" border=0 width=0 frameborder=no framespacing=0>
- <frame src="index_files/sheet006.htm" name="frSheet">
+ <frame src="index_files/sheet001.htm" name="frSheet">
  <frame src="index_files/tabstrip.htm" name="frTabs" marginwidth=0 marginheight=0>
  <noframes>
   <body>
