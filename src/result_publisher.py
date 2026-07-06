@@ -70,7 +70,7 @@ for sheetname in sheetnames:
         logger.debug("'{}' not a player sheet - continuing.".format(sheetname))
         continue
     
-    new_sheetname = sheetname[0]
+    new_sheetname = sheetname[0]*7
     logger.debug("Renaming sheet {} to {}".format(sheetname, new_sheetname))
     file[sheetname].title = new_sheetname
     
